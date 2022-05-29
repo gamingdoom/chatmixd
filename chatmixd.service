@@ -7,7 +7,8 @@ After=graphical.target
 
 [Service]
 Type=simple
-ExecStart=/usr/local/bin/chatmixd
+# Change the 5 below if you want to change the interval between checks.
+ExecStart=/usr/local/bin/chatmixd 5
 
 [Install]
 WantedBy=default.target
