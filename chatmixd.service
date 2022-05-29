@@ -1,0 +1,13 @@
+# Systemd service for chatmixd.
+# You may need to change the ExecStart path to match your installation.
+
+[Unit]
+Description=Daemon to check if chatmix is balanced on arctis headsets.
+After=graphical.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/chatmixd
+
+[Install]
+WantedBy=graphical.target
